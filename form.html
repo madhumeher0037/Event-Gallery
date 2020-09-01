@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>personal data</title>
+        <style>
+            table.center
+            {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        </style>
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body style="background-color: darkorchid;">
+        <h1 style="text-align: center;color: goldenrod;font-size: 40px;"><b>Personal Data:</b></h1>
+        <form>
+            <table border="0" class="center">
+            <tr><td>NAME:</td><td><input type="text" name="NAME"></td></tr>
+            <tr><td>PASSWORD:</td><td><input type="password" name="password"></td></tr>
+            <tr><td>EMAIL ID:</td><td><input type="text" name="MAIL ID"></td></tr>
+            <tr><td>CONTACT:</td><td><input id="phonenumber" type="number" name="PHONE NO" maxlength="10" placeholder="XXXXXXXXXX" onblur="phonenum();"><span id="phoneprompt;"></span></td></tr>
+            </table>
+            <h2 style="color:goldenrod;text-align: center;font-size: 40px;"><b>EDUCATIONAL INSTITUTE:</b></h2>
+            <table border="0" class="center">
+            <tr><td>DEGREE:</td>
+                <td>
+                    <select>
+                        <option >--select group--</option>
+                        <option >COMMERES</option>
+                        <option >ARTS</option>
+                        <option >SCIENCE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>ENGINERRING:</td>
+                <td>
+                    <select>
+                        <option >--select group--</option>
+                        <option >CSE</option>
+                        <option >ECE</option>
+                        <option >CIVIL</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>HOBBIES:</td><td><input type="checkbox" name="HOBBIES">EATING<input type="checkbox" name="HOBBIES">SLEEPING</td></tr>
+            <tr><td>Address:</td><td><textarea rows="10" cols="50" wrap="soft"></textarea></td>
+            <tr><td>ATTACH RESUME:</td><td><input type="file" name="file" required></td>
+            </table>
+            <div style="text-align: center;">
+                <input type="submit" style="background-color: goldenrod;">
+            </div>
+        </form>
+    </body>
+</html>
