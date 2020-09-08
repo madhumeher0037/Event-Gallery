@@ -13,6 +13,20 @@
             left: 25px;
             background-color: black;
         }
+        .hovereffect
+        {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            transition: .6s ease-out;
+            box-shadow: 0 10px 10px rgba(0, 0,0, 0.5);
+        }
+        .hovereffect:hover{
+            transform: translateY(15px);
+        }
+        .hovereffect:hover:before{
+            opacity: 1;
+        }
     </style>
 </head>
 <body style="background-color: black;">
@@ -35,16 +49,16 @@
     <br>
     <br>
     <div class="row container-fluid">
-        <div class="col-lg-4 col-md-4 col-sm-4"><a href="dance.html"><img src="DANCE.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>DANCES</b></div></a></div>
-        <div class="col-lg-4 col-md-4 col-sm-4"><a href="archi.html"><img src="ARCHITECTURE_1.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>MONUMENTS</b></div></a></div>
-        <div class="col-lg-4 col-md-4 col-sm-4"><a href="fest.html"><img src="FEST_1.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>FESTIVALS</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4"><a href="dance.html"><img src="DANCE.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>DANCES</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4"><a href="archi.html"><img src="ARCHITECTURE_1.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>MONUMENTS</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4"><a href="fest.html"><img src="FEST_1.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>FESTIVALS</b></div></a></div>
     </div>
     <br>
     <br>
     <br>
     <div class="row container-fluid">
         <div class="col-lg-4 col-md-4 col-sm-4 float-right"></div>
-        <div class="col-lg-4 col-md-4 col-sm-4 mx-auto d-block"><a href="CITIES.HTML"><img src="Mumbai.JPG" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>CITIES</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4 mx-auto d-block"><a href="CITIES.HTML"><img src="Mumbai.JPG" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>CITIES</b></div></a></div>
         <div class="col-lg-4 col-md-4 col-sm-4 float-right"></div>
     </div>
     <br>
