@@ -21,6 +21,29 @@
             margin-left: 160px;
             
         }
+        .modalpadding
+        {
+            font-size: 20px;
+            width: 75%;
+            margin: auto;
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+            padding: 12px;
+            border-radius: 30px;
+            outline: none;
+            background:whitesmoke
+            border-top: green;
+            border-left:green;
+            border-right: green;
+            border-bottom: green;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .internallogin
+        {
+            padding: 15px;
+            font-size:large;
+        }
     </style>
 </head>
 <body class="text-light" style="background-color: black;">
@@ -45,25 +68,25 @@
     </div>
     <div class="modal fade" role="dialog" id="myid">
         <div class="modal-dialog" role="document">
-       <div class="modal-content">
+       <div class="modal-content bg-secondary">
                 <div class="modal-header">
                     <H1 class="modal-title">LOG IN</H1>
-                    <button type="button" class="close text-danger" data-dismiss="modal">CLOSE</button>
+                    <button type="button" class="close text-danger bg-light" data-dismiss="modal">X</button>
                 </div>
                 <hr class="line">
                 <div class="modal-body">
                     <div class="form-group">
                         <p><b>USERNAME</b></p>
-                        <input type="text" name="username" class="form-control" placeholder="User Id">
+                        <input type="text" name="username" class="form-control modalpadding" placeholder="User Id">
                     </div>
                     <div class="form-group">
                         <p><b>PASSWORD</b></p>
-                        <input type="password" name="password" class="form-control" placeholder="Password"><br>
+                        <input type="password" name="password" class="form-control modalpadding" placeholder="Password"><br>
                         <p class="frgt-pswd float-left" data-toggle="modal" data-dismiss="modal">forgot password?</p><br>
                     </div>
                 </div>
                 <div class="modal-footer">
-                        <button type="submit"  class="btn btn-success" data-dismiss="modal"><b>LOG IN</b></button>
+                        <button type="submit"  class="btn btn-success internallogin" data-dismiss="modal"><b>LOG IN</b></button>
                 </div>
             </div>
         </div>
