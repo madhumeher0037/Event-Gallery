@@ -36,6 +36,24 @@
         {
             margin-left:160px;
         }
+        .modalpadding
+        {
+            font-size: 20px;
+            width: 85%;
+            margin: auto;
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            border-radius: 30px;
+            outline: none;
+            background:whitesmoke
+            border-top: green;
+            border-left:green;
+            border-right: green;
+            border-bottom: green;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
     </style>
 </head>
 <body style="background-color: black;">
@@ -69,11 +87,11 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <p><b>USERNAME</b></p>
-                        <input type="text" name="username" class="form-control" placeholder="User Id">
+                        <input type="text" name="username" class="form-control modalpadding" placeholder="User Id">
                     </div>
                     <div class="form-group">
                         <p><b>PASSWORD</b></p>
-                        <input type="password" name="password" class="form-control" placeholder="Password"><br>
+                        <input type="password" name="password" class="form-control modalpadding" placeholder="Password"><br>
                         <p class="frgt-pswd float-left" data-toggle="modal" data-dismiss="modal">forgot password?</p><br>
                     </div>
                 </div>
