@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALLERY</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>EVENT GALLERY</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         .bottom-left
         {
@@ -22,19 +25,19 @@
             box-shadow: 0 10px 10px rgba(0, 0,0, 0.5);
         }
         .hovereffect:hover{
-            transform: translateY(15px);
+            transform: translateY(25px);
         }
         .hovereffect:hover:before{
             opacity: 1;
+        }
+        .loginmargin
+        {
+            margin-left:160px;
         }
         .limargin
         {
             margin-left:5px;
             margin-right:5px;
-        }
-        .loginmargin
-        {
-            margin-left:160px;
         }
         .modalpadding
         {
@@ -44,7 +47,7 @@
             margin-top: 30px;
             margin-right: 20px;
             margin-left: 20px;
-            padding: 12px;
+            padding: 20px;
             border-radius: 30px;
             outline: none;
             background:whitesmoke;
@@ -59,6 +62,7 @@
             padding: 15px;
             font-size:large;
         }
+        /* Make the image fully responsive */
         .carousel-inner img {
            width: 50%;
            height: 50%;
@@ -101,13 +105,13 @@
     <div class=" collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav">
             <li class="nav-item float-left limargin">
-                <a class="nav-link bg-light text-body" href="eventgallery.html">HOME</a>
+                <a class="nav-link bg-light " href="eventgallery.html">HOME</a>
             </li>
             <li class="nav-item float-left limargin">
                 <a class="nav-link text-light" href="CONTACTUS.HTML">CONTACT US</a>
             </li>
             <li class="nav-item loginmargin">
-                <button type="button" class="btn btn-success text-body" href="#" data-toggle="modal" data-target="#myid">LOGIN</button>
+                <button type="button" class="btn btn-success " href="#" data-toggle="modal" data-target="#myid">LOGIN</button>
             </li>
         </ul>
     </div>
@@ -136,7 +140,7 @@
             </div>
         </div>
     </div>
-    </nav>    
+    </nav>   
     <div class="container jumbotron">
         <h1>GALLERY</h1>
         <p><B>Photos of INDIA</B></p>
@@ -170,7 +174,7 @@
                 <div class="overlay">INDIAN CITIES</div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" >
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
         <a class="carousel-control-next" href="#myCarousel" data-slide="next">
@@ -180,17 +184,17 @@
     <br>
     <br>
     <div class="row container-fluid">
-        <div class="hovereffect col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="dance.html"><img src="DANCE.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>DANCES</b></div></a></div>
-        <div class="hovereffect col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="archi.html"><img src="ARCHITECTURE_1.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>MONUMENTS</b></div></a></div>
-        <div class="hovereffect col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="fest.html"><img src="FEST_1.jpg" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>FESTIVALS</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4"><a href="dance.html"><img src="DANCE.jpg" alt="" class=" img-fluid img-thumbnail"><div class="bottom-left text-light"><b>DANCES</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4"><a href="archi.html"><img src="ARCHITECTURE_1.jpg" alt="" class=" img-fluid img-thumbnail"><div class="bottom-left text-light"><b>MONUMENTS</b></div></a></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4"><a href="fest.html"><img src="FEST_1.jpg" alt="" class=" img-fluid img-thumbnail"><div class="bottom-left text-light"><b>FESTIVALS</b></div></a></div>
     </div>
     <br>
     <br>
     <br>
     <div class="row container-fluid">
-        <div class="col-lg-4 col-md-4 col-sm-4 float-right"></div>
-        <div class="hovereffect col-lg-4 col-md-4 col-sm-4 col-xs-4 mx-auto d-block"><a href="CITIES.HTML"><img src="Mumbai.JPG" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>CITIES</b></div></a></div>
-        <div class="col-lg-4 col-md-4 col-sm-4 float-right"></div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 float-right"></div>
+        <div class="hovereffect col-lg-4 col-md-4 col-sm-4 mx-auto d-block"><a href="CITIES.HTML"><img src="Mumbai.JPG" alt="" class="img-fluid img-thumbnail"><div class="bottom-left text-light"><b>CITIES</b></div></a></div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 float-right"></div>
     </div>
     <br>
     <br>
@@ -198,8 +202,5 @@
     <br>
     <br>
     <br>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>   
 </body>
 </html>
