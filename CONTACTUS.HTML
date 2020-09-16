@@ -45,6 +45,17 @@
             font-size:large;
         }
     </style>
+    <script>
+        function sub()
+        {
+            console.log("NAME :",document.getElementById("name").value);
+            console.log("Email ID :",document.getElementById("mail").value);
+            console.log("Mobile NO :",document.getElementById("pno").value);
+            console.log("SUBJECT :",document.getElementById("subject").value);
+            console.log("MESSAGE :",document.getElementById("message").value);
+            alert("your query has been sent successfully")
+        }
+    </script>
 </head>
 <body class="text-light" style="background-color: black;">
         <nav class="navbar navbar-expand-md bg-dark navbar-light navbar-sticky-top">
@@ -92,6 +103,54 @@
         </div>
     </div>
     </nav>    
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><label><b>NAME :</b></label></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="text" name="name" id="name"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><label><b>Email Id :</b></label></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="text" name="mailid" id="mail"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><label><b>Mobile No :</b></label></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="number" name="contact" id="pno" value="+91" placeholder="+91-XXXXXXXXXX"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><label><b>Subject :</b></label></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="text" name="Subject" id="subject"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><label><b>Message :</b></label></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><textarea name="message" id="message" cols="50" rows="10"></textarea></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        <div class="col-lg-4 col-md-4 col-sm-4"><button type="submit" class="btn-success" onclick="sub()">SUBMIT</button></div>
+    </div>
+    <br>
     <br>
     <br>
     <div class="text">
