@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top_smartphones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .b1
+        {
+            font-size:x-large;
+            padding: 20px;
+            margin: auto;
+            margin-left: 620px;
+        }
+        .center
+        {
+            margin: auto;
+            margin-left: 420px;
+            margin-right: 400px;
+        }
+    </style>
+    <script>
+        function pm()
+        {
+            var mydic = [{name:"Samsung Galaxy Note 20 Ultra ",processor:"Samsung Exynos 9 Octa 990",camera:"108 MP + 12 MP + 12 MP",battery:"4500 mAh",price:"Rs.77,999"},
+                                {name:"iphone 11",processor:"Apple A13 Bionic",camera:"12mp + 12mp",battery:"3110 mah",price:"Rs.66,990"},
+                                {name:"Samsung's Galaxy S20 plus ",processor:"Exynos 9 Octa 990",camera:"12 MP + 64 MP + 12 MP",battery:"4500 mAh",price:"Rs.70,334"},
+                                {name:"Asus ROG Phone 3",processor:"Snapdragon 865 Plus",camera:"64 MP + 13 MP + 5 MP",battery:"6000 mAh",price:"Rs.49,999."},
+                                {name:"OnePlus 8 Pro",processor:"Snapdragon 865",camera:"48 MP + 48 MP + 8 MP + 5 MP",battery:"4510 mAh",price:"Rs.54,999"},
+                                {name:"Xiaomi Mi 10",processor:"Snapdragon 865",camera:"108 MP + 13 MP + 2 MP + 2 MP",battery:"4780 mAh",price:"Rs.47,890"},
+                                {name:"Huawei P30 Pro",processor:"HiSilicon Kirin 980",camera:"40 MP + 20 MP + 8 MP",battery:"4200 mAh",price:"57,500"},
+                                {name:"Apple iPhone XR",processor:"Apple A12 Bionic",camera:"12mp",battery:"2942 mAh",price:"Rs.44,999"},
+                                {name:"Realme X50 Pro",processor:"Snapdragon 865",camera:"64 MP + 12 MP + 8 MP + 2 MP",battery:"4200 mAh",price:"Rs.39,999"},
+                                {name:"Vivo iQOO 3",processor:"Snapdragon 865",camera:"48 MP + 13 MP + 13 MP + 2 MP",battery:"4440 mAh",price:"Rs.34,990"},
+                                {name:"OnePlus 7T",processor:"Snapdragon 855 Plus",camera:"48 MP + 16 MP + 12 MP",battery:"3800 mAh",price:"Rs.34,999"},
+                                {name:"Realme X2 Pro",processor:"Snapdragon 855 Plus",camera:"64 MP + 13 MP + 8 MP + 2 MP",battery:"4000 mAh",price:"Rs.28,799"},
+                                {name:"Realme X3 SuperZoom Edition",processor:"Snapdragon 855 Plus",camera:"64 MP + 8 MP + 8 MP + 2 MP",battery:"4200 mAh",price:"Rs.27,190"},
+                                {name:"OnePlus Nord",processor:"Snapdragon 765G",camera:"48 MP + 8 MP + 5 MP + 2 MP",battery:"4115 mAh",price:"Rs.27,999"},
+                        ];
+            document.write("<table border='1' class='center'>");
+                document.write("<tr>");
+                        document.write("<th>");
+                            document.write("Model");
+                        document.write("</th>");
+                        document.write("<th>");
+                            document.write("processor");
+                        document.write("</th>");
+                        document.write("<th>");
+                            document.write("camera");
+                        document.write("</th>");
+                        document.write("<th>");
+                            document.write("price");
+                        document.write("</th>");
+                    document.write("</tr>");
+                for(var i=0;i<mydic.length;i++)
+                {
+                    document.write("<tr>");
+                        document.write("<td>");
+                            document.write(mydic[i].name);
+                        document.write("</td>");
+                        document.write("<td>");
+                            document.write(mydic[i].processor);
+                        document.write("</td>");
+                        document.write("<td>");
+                            document.write(mydic[i].camera);
+                        document.write("</td>");
+                        document.write("<td>");
+                            document.write(mydic[i].price);
+                        document.write("</td>");
+                    document.write("</tr>");
+                };
+                document.write("</table>");
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">CLICK BUTTON FOR TOP 10 SMARTPHONES IN 2020</h1>
+    <button class="b1" type="button" onclick="pm()">BUTTON</button>
+</body>
+</html>
