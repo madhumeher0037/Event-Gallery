@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function xyz()
+        {
+            var my=document.getElementById("myname").value;
+            if(my=="__select city__")
+            {
+                confirm("you have to select a\ncity before submitting");
+                document.getElementById("temp").innerHTML ="<b>"+"SELECT YOUR CITY"+"</b>";
+            }
+            else
+            {
+                var b=confirm("you selected "+my);
+                if(b==true)
+                {
+                    var city=my;
+                    var request = new XMLHttpRequest();
+                    request.open('GET','https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=93f26e3c57081a6210de53b8dcfdfea4',true)
+                    request.onload = function(){
+                        if(request.status >=200 && request.status<400){
+                            //succcess
+                            var data = JSON.parse(request.responseText);
+                            console.log(data);
+                            var tmp=data.main.temp - (273);
+                            tmp=parseInt(tmp);
+                            document.getElementById("temp").innerHTML ="Name :"+data.name+"</br>"+"Temperature :"+tmp+"*c"+"</br>"+"Weather :"+data.weather[0].description;
+                        }
+                        else
+                        console.log("error");
+                    };
+                    request.send();
+                }
+                
+            }
+        }
+ 
+    </script>
+    <style>
+        
+        .backgroung_image
+        {
+            background-image: url(earth3.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+        }
+        select
+        {
+            padding: 12px;
+            font-size: 23px;
+            margin-left: 130px;
+        }
+        button
+        {
+            padding: 12px;
+            font-size: 18px;
+            margin-right: 60px;
+        }
+        .text
+        {
+            font-size: 35px;
+            margin: auto;
+            margin-right: 1070px;
+        }
+    </style>
+</head>
+<body class="container-fluid backgroung_image">
+    <div class="container-fluid jumbotron" style="background:#4682B4;" >
+        <h1 style="color: #FFF8DC;">WEATHER IN INDIA</h1>
+    </div>
+    <div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <select id="myname">
+            <option>__select city__</option>
+            <option>Hyderabad</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Bangalore</option>
+            <option>Chennai</option>
+            <option>Pune</option>
+            <option>Jaipur</option>
+            <option>Bhopal</option>
+            <option>Kolkata</option>
+            <option>Nagpur</option>
+            <option>Patna</option>
+            <option>Visakhapatnam</option>
+            <option>Ranchi</option>
+            <option>Nashik</option>
+        </select>
+    </div>
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3"><button type="submit" class="btn-success" onclick="xyz()"><b>SUBMIT</b></button></div>
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text"></div>
+    <h1 id="temp" class="text" style="color:darkGreen;"><b>SELECT YOUR CITY</b></h1>
+    </body>
+</html>
