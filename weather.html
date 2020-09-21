@@ -32,7 +32,7 @@
                             console.log(data);
                             var tmp=data.main.temp - (273);
                             tmp=parseInt(tmp);
-                            document.getElementById("temp").innerHTML ="Name :"+data.name+"</br>"+"Temperature :"+tmp+"*C"+"</br>"+"Weather :"+data.weather[0].description;
+                            document.getElementById("temp").innerHTML ="Name :"+data.name+"</br>"+"Temperature :"+tmp+"*c"+"</br>"+"Weather :"+data.weather[0].description;
                         }
                         else
                         console.log("error");
@@ -57,11 +57,13 @@
         }
         select
         {
-            padding: 12px;
+            padding: 10px;
             font-size: 23px;
             border-radius: 10px;
             box-shadow: 6px 6px 12px black;
             outline: 0px;
+            margin: auto;
+            margin-left: 30px;
         }
         button
         {
@@ -71,25 +73,33 @@
             border: 0px;
             outline: 0px;
             box-shadow: 6px 6px 12px black;
+            margin: auto;
+            margin-left: 40px;
+           
         }
         .text
         {
+            border-bottom: 5px solid red;
+            border-right: 5px solid red;
+            border-radius: 10px;
+            background-color:grey;
+            padding: 13px;
             font-size: 45px;
+            font-style: oblique;
             margin: auto;
-            margin-bottom: 120px;
-            margin-right: 900px;
+            margin-right: 147px;
+            margin-left: 250px;
             text-shadow: 2px 2px 4px #000000;
+            position: absolute;
+            text-align: center;
         }
     </style>
 </head>
 <body class="container-fluid backgroung_image">
-    <div class="container-fluid jumbotron" style="background:#4682B4;text-shadow: 0px 4px 0px #000000;" >
-        <h1 style="color: #FFF8DC;">WEATHER IN INDIAN CITIES</h1>
+    <div class="container-fluid jumbotron" style="background:#4682B4;text-shadow: 0px 4px 0px #000000;font-style: oblique;font-size: 45px;" >
+        <h1 style="color:whitesmoke;"><b></b>WEATHER IN INDIAN CITIES</h1>
     </div>
-    <div class="row">
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-        <select id="myname">
+        <tr><td><select id="myname">
             <option>__select city__</option>
             <option>Hyderabad</option>
             <option>Mumbai</option>
@@ -105,10 +115,22 @@
             <option>Visakhapatnam</option>
             <option>Ranchi</option>
             <option>Nashik</option>
-        </select>
-    </div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3"><button type="submit" class="btn-success" onclick="xyz()"><b>SUBMIT</b></button></div>
-    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 text"></div>
+        </select></td>
+        <td><button type="submit" class="btn-success" onclick="xyz()"><b>SUBMIT</b></button></td>
+    </tr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
     <h1 id="temp" class="text" style="color:#ff0000;"><b>SELECT YOUR CITY</b></h1>
     </body>
 </html>
