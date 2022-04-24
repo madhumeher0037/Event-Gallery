@@ -1,1 +1,1 @@
-# sonet2020
+Event Gallery implemented using HTML markup language
